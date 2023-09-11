@@ -1,0 +1,59 @@
+body{
+	background:#9E9FA5;
+}
+
+.container{
+	text-align:center;
+	background: #C4C1A4;
+    margin-left: 20%;
+    margin-right:20%;
+    padding: 3% 0;
+    line-height: 1.2em;
+}
+h1,
+#result3{
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+}
+label{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table{
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+th,td{
+    padding:3%;
+}
+
+.bodyfat{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+p{
+    font-family: 'Quicksand', sans-serif;
+}
+footer {
+    background-color: #6F6F51;
+    text-align: center;
+}
+
+.footer {
+    padding: 2px 0 1px 0;
+}
+
+.footer p {
+    color: whitesmoke;
+}
+
+.logo1024 {
+    width: 80px;
+    height: 80px;
+    -webkit-filter: brightness(100);
+    filter: brightness(100);
+    padding-top: 0.5rem;
+}

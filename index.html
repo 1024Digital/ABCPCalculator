@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Army Body Composition Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ---------------Google Fonts----------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Quicksand&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <!-- 
+        font-family: 'Black Ops One', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+        -->
+<!-- --------------------FAVICON------------------ -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    
+
+</head>
+<body>
+    <h1>Army Body Composition Calculator</h1>
+    <div class="container">
+        <label for="absThree">Ab Circumference (Inches)</label>
+        <br>
+        <input id="absThree" type="number" required>
+        <br>
+        <label for="weightTwo">Weight (LBS)</label>
+        <br>
+        <input id="weightTwo" type="number" required>
+        <br>
+            <label for="age">Age (yrs)</label>
+             <br>
+        <input id="age" type="number" maxlenght="3" size="3" required>
+        <br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <br>
+            <br>
+        <button type="button" onclick="bodyFatTwo()">
+          SUBMIT
+        </button>
+             <button type="button" onclick="location.reload()">
+          RESET
+        </button>
+        <br>
+        <div class="result">
+          <p id="result3"></p>
+        </div>
+      </div>
+      <div class="bodyfat">
+        <h2>Body Fat Percentage</h2>
+        <table>
+            <tr>
+                <th>Age Group</th>
+                <th>Males BF%</th>
+                <th>Female BF%</th>
+            </tr>
+            <tr>
+                <td>17–20</td>
+                <td>20%</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>21-27</td>
+                <td>22%</td>
+                <td>32%</td>
+            </tr>
+            <tr>
+                <td>28–39</td>
+                <td>24%</td>
+                <td>34%</td>
+            </tr>
+            <tr>
+                <td>40 & Older</td>
+                <td>26%</td>
+                <td>36%</td>
+            </tr>
+        </table>
+        <div>
+            <p>Ref: AR 600-9</p>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+            <p class="copyright"> <img class="logo1024" src="1024_logo_lg.png" alt="1024 Digital Media Logo">
+            </p>
+            <p class="copyright"> &copy; 2023 1024 Digital Media </p>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+/*  Body Fat Standards:
+  
+Age group: 17–20
+   Male (% body fat): 20%
+   Female (% body fat): 30%
+       
+Age group: 21–27
+  Male (% body fat): 22%
+  Female (% body fat): 32%
+    
+Age group: 28–39
+  Male (% body fat): 24%
+  Female (% body fat): 34%
+    
+Age group: 40 and older
+  Male (% body fat): 26%
+  Female (% body fat): 36% 
+    */ -->
